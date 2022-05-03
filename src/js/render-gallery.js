@@ -4,7 +4,8 @@ const refs = {
 };
 
 function renderGallery(images) {
-    const murkup = images.map(image => {
+  const murkup = images
+    .map(image => {
         const { id, largeImageURL, webformatURL, tags, likes, views, comments, downloads } = image;
         return `<a class="gallery__link" href="${largeImageURL}">
           <div class="gallery-item" id="${id}">
@@ -18,6 +19,5 @@ function renderGallery(images) {
           </div>
         </a>`;
     }).join('');
+  refs.gallery.insertAdjacentHTML('beforeend', murkup);
 };
-
-refs.gallery.insertAdjacentHTML('beforeend', murkup);
