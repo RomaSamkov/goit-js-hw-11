@@ -79,7 +79,7 @@ function okFoundImages(data) {
 };
 
 function emptySearch() {
-    Notiflix.Notify.failure('The search string cannot be empty. Please specify your search query.');
+    Notiflix.Notify.failure('The search string cannot be empty!');
 };
 
 function noFoundImages() {
