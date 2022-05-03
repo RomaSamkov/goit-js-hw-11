@@ -37,7 +37,8 @@ function onSearch(event) {
         return;
     };
     
-    fetchImages(query, page, perPage).then(({ data }) => {
+    fetchImages(query, page, perPage)
+        .then(({ data }) => {
         if (data.totalHits === 0) {
             noFoundImages();
         } else {
@@ -59,7 +60,8 @@ function onLoadMore() {
     page += 1;
     simpleLightBox.destroy();
 
-    fetchImages(query, page, perPage).then(({ data }) => {
+    fetchImages(query, page, perPage)
+        .then(({ data }) => {
         renderGallery(data.hits);
         simpleLightBox = new SimpleLightbox('.gallery a').refresh();
 
@@ -72,7 +74,7 @@ function onLoadMore() {
     }).catch(error => console.log(error));
 };
 
-function okFoundImages() {
+function okFoundImages(data) {
     Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images.`);
 };
 
