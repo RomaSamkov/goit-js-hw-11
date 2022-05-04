@@ -11,7 +11,7 @@ body {
     line-height: 1.5;
     color: rgb(0, 0, 0);
     margin: 0;
-    background-image: linear-gradient(-100deg, rgba(7, 7, 7, 0.9) 10%, rgba(61, 61, 61, 0.8) 90%);
+    background-image: linear-gradient(-100deg, rgba(30, 26, 34, 0.9) 10%, rgba(28, 159, 168, 0.8) 90%);
 }
 
 a {
@@ -27,7 +27,7 @@ p {
     padding-top: 10px;
     padding-bottom: 10px;
     position: fixed;
-    background-color: #2d2d2e;
+    background-color: #2b2b53;
     box-shadow: 0 1px 3px rgba(235, 235, 235, 0.12), 0 1px 1px rgba(207, 207, 207, 0.14),
         0 2px 1px rgba(241, 241, 241, 0.2);
     z-index: 1;
@@ -55,7 +55,7 @@ p {
     align-items: center;
     width: 2.5em;
     border: none;
-    background-color: rgb(200, 200, 200);
+    background-color: #0c656b;
 
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -157,10 +157,10 @@ p {
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #fbfbfb;
+    background-color: #0c656b;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
     font: inherit;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -190,6 +190,6 @@ p {
 
 .btn-load-more:hover,
 .btn-to-top:hover {
-    background-color: #c3c3c3;
+    background-color: #0c3336;
     transition: all 0.3s;
 }
